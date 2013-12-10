@@ -1,0 +1,44 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=GBK">
+<title>初中数学速算达人-新版</title>
+<style type="text/css">
+  body {overflow:hidden;}
+  #RESET,#PAUSE,#INFO{ cursor:pointer;}
+  #topBlock{ width:800px; height:100px;z-index:130; position:absolute; left:50%; margin-left:-400px; float:left;top:100px;}
+  #titleTxt{ width:478px; height:55px; z-index:150; position:absolute; border:0; left:50%; margin-left:-239px; top:300px;}
+  #startBtn{ width:165px; height:75px; z-index:150; position:absolute; border:0; left:50%; margin-left:-83px; top:450px; display:block;  background:url(img/startBtn.png) no-repeat; text-indent:-98988px;}
+  #startBtn:hover{ background:url(img/startBtn_hover.png) no-repeat;}
+  #person{ width:420px; height:159px;z-index:150; position:absolute; border:0; left:50%; margin-left:-210px; bottom:0; }
+</style>
+</head>
+<body bgcolor="#76d5e9">
+ 
+<img id="LOADING" style="z-index: 150; left: 0px; top: -500px; position: absolute;" width="370" height="60" align="baseline" border="0" hspace="0" src="./img/loading.gif1">
+<img id="MOUNTAINS" style="z-index: 30; left: 0px; top: 0px; position: absolute;" width="1600" height="400" align="baseline" border="0" hspace="0" src="./img/mountains.png">
+<img id="GROUND" style="z-index: 40; left: 0px; top: 706px; position: absolute;" width="1600" height="51" align="baseline" border="0" hspace="0" src="./img/ground.png">
+<img id="CLOUDS1" style="z-index: 120; left: -2.5367849616273332px; top: 0px; position: absolute;" width="1600" height="81" align="baseline" border="0" hspace="0" src="./img/clouds1.png"> 
+<img id="CLOUDS2" style="z-index: 110; left: -11.644182368223497px; top: 0px; position: absolute;" width="1600" height="84" align="baseline" border="0" hspace="0" src="./img/clouds2.png">
+<img id="CLOUDS3" style="z-index: 90; left: -98.78130027340788px; top: 0px; position: absolute;" width="1600" height="81" align="baseline" border="0" hspace="0" src="./img/clouds3.png">
+<img id="INFOTEXT" style="z-index: 152; left: 0px; top: -500px; position: absolute;" width="313" height="300" align="baseline" border="0" hspace="0" src="./img/infotext.png" onClick="togglePaused();">
+
+<div id="topBlock">
+<img id="rainBtn" src="./img/rain.png" style="z-index:150; position:absolute; width:85px; height:89px; border:0; left:0;" />
+<img id="hailBtn" src="./img/hail.png" style="z-index:150; position:absolute; width:75px; height:62px; border:0; left:360px; top:30px;" />
+<img id="snowBtn" src="./img/snow.png" style="z-index:150; position:absolute; width:85px; height:89px; border:0; left:710px;" />
+</div>
+
+<img id="titleTxt" src="./img/default_title.png" />
+<a href="game.html" id="startBtn" target="_self">开始游戏</a>
+<img id="person" src="./img/tank11.png" />
+
+<script src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/game.js"></script>
+<script type="text/javascript">
+  getWindowSize();
+  moveObjTo(LOADING, myCenterH - 185, myCenterV - 30);
+  picLoadInit();
+</script>
+
+</body>
+</html>

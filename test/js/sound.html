@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>无标题文档</title>
+<script>
+//Customize Dynamic Audio Link 自定义动态声音链接
+/*function DynamicAudioLink(){
+open("../img/PZ_032.WAV")
+}
+
+//Customize Dynamic Audio Mouse Over Color 自定义动态声音mouseover颜色
+function AudioOver() {
+document.Audio.button.style.background="#999999"
+document.Audio.button.style.color="white"
+}
+
+//Customize Dynamic Audio Mouse Down Color 自定义动态声音mousedown颜色
+function AudioDown() {
+document.Audio.button.style.color="#cccccc"
+}
+
+//Customize Dynamic Audio Mouse Off Color 自定义动态声音mouseOff 颜色
+function AudioOut() {
+document.Audio.button.style.background="#666666"
+document.Audio.button.style.color="#ffffff"
+}
+
+//Customize Dynamic Audio sound 自定义动态声音
+function playSound() 
+{
+document.all.sound.src ="../img/PZ_032.WAV";
+}
+
+document.write('<bgsound id="sound">')
+
+//Customize Button Style 自定义按钮样式
+document.write('<style type="text/css">'+'<!--')
+document.write('.select{background:#666666;border-color:"#999999";color:"#ffffff";font-family:Arial,Helvetica,Verdana;font-size:10pt;font-weight: bold;}'+'-->'+'</STYLE>')
+
+document.write('<center><form name=Audio><input class="select" name=button type="button" value="Dynamic Audio" onclick="DynamicAudioLink()" onMouseOver="AudioOver();playHome()" onMouseDown="AudioDown()" onMouseOut="AudioOut()"></form></center>')*/
+/*function my_sound()
+{
+  document.music1.play();  //播放曲目
+}*/
+</script>
+</head>
+
+<body>
+<embed id="devUnknown"   
+       src="./img/PZ_032.WAV"  
+       width="0"  
+       height="0"  
+       loop="false"   
+       autostart="false"
+</embed>  
+  
+<script type="text/javascript">  
+function playSound()  
+{  
+  var node=document.getElementById('devUnknown');  
+  if(node!=null)  
+  {  
+     node.Play();  
+  }  
+}  
+</script>  
+<!--<img src="img/2meteor41.png" name="Image64" width="53" height="120" border="0" id="Image64" onclick="my_sound()" /> //点下图片，就发出声音，是不是很酷
+<embed name='music1' src='./img/pz_032.wav' loop=false  hidden=true width=0  height=0 autostart=false></embed>-->
+</body>
+</html>
